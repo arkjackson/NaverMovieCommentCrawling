@@ -11,6 +11,7 @@ import pymysql
 
 # 자신의 크롬 버전에 맞는 chromedriver 설치
 driver = webdriver.Chrome()
+# 영화 '비상선언'
 driver.get('https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkEw&pkid=68&os=10105426&qvt=0&query=%EC%98%81%ED%99%94%20%EB%B9%84%EC%83%81%EC%84%A0%EC%96%B8%20%EC%A0%95%EB%B3%B4')
 # 개봉일 부분 찾기
 raw_released_date = driver.find_elements(By.XPATH, '/html/body/div[3]/div[2]/div/div[1]/div[2]/div[2]/div[1]/div/div[1]/dl/div[1]/dd')
